@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Calculator Screen Badge -->
+  <rect x="96" y="96" width="320" height="96" rx="20" fill="#022c22" stroke="#059669" stroke-width="4"/>
+  <text x="386" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="bold" fill="#6ee7b7" text-anchor="end">30d R$ %</text>
+
+  <!-- Calculator Buttons / Keypad grid -->
+  <g fill="#065f46" stroke="#047857" stroke-width="2">
+    <!-- Row 1 -->
+    <rect x="96" y="218" width="65" height="55" rx="14"/>
+    <rect x="181" y="218" width="65" height="55" rx="14"/>
+    <rect x="266" y="218" width="65" height="55" rx="14"/>
+    <rect x="351" y="218" width="65" height="55" rx="14" fill="#059669"/>
+
+    <!-- Row 2 -->
+    <rect x="96" y="293" width="65" height="55" rx="14"/>
+    <rect x="181" y="293" width="65" height="55" rx="14"/>
+    <rect x="266" y="293" width="65" height="55" rx="14"/>
+    <rect x="351" y="293" width="65" height="55" rx="14" fill="#059669"/>
+
+    <!-- Row 3 -->
+    <rect x="96" y="368" width="65" height="55" rx="14"/>
+    <rect x="181" y="368" width="65" height="55" rx="14"/>
+    <rect x="266" y="368" width="65" height="55" rx="14"/>
+    <rect x="351" y="368" width="65" height="55" rx="14" fill="#10b981"/>
+  </g>
+
+  <!-- Exponential Growth Curve Overlay with filter -->
+  <path d="M 100 400 Q 240 380 340 280 T 420 120" fill="none" stroke="url(#lineGrad)" stroke-width="12" stroke-linecap="round" filter="url(#shadow)"/>
+  <circle cx="420" cy="120" r="14" fill="#ffffff" stroke="#10b981" stroke-width="5"/>
+</svg>

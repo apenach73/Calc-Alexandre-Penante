@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora do Alexandre Penante",
+  "description": "Calculadora de juros compostos para 30 dias com evolução diária e taxa diária personalizada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
